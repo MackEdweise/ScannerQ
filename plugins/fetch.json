@@ -62,5 +62,13 @@
         },
         "is_top_level": false,
         "variables": {}
+    },
+    "cordova-plugin-swift-support": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-swift-support"
+        },
+        "is_top_level": false,
+        "variables": {}
     }
 }
