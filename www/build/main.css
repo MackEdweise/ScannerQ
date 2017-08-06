@@ -25198,3 +25198,37 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+page-home ion-card.cards-list-demo ion-card-header {
+  color: #387df5;
+}
+
+page-home ion-card.cards-list-demo a > icon {
+  color: #444444;
+}
+
+page-home .item-avatar > div.circle:first-child {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2% 3%;
+  color: #ffffff;
+}
+
+page-home .floatright {
+  float: right;
+}
+
+page-home .list.card {
+  border-top: 3px solid blue;
+}
+
+page-home .item.item-avatar h2, page-home .item.item-avatar p {
+  margin-top: 0px;
+  margin-bottom: 1px;
+}

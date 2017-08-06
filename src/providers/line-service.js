@@ -17,8 +17,35 @@ var LineService = (function () {
         var uid = firebase_1["default"].auth().currentUser.uid;
         var updates = {};
         updates['users/' + uid + '/line'] = DBLineRef;
-        updates['lines/' + company] = { line: 1 };
+        updates['lines/' + company + '/' + line] = 1;
         firebase_1["default"].database().ref().update(updates);
+    };
+    LineService.prototype.setLineSize = function (callback) {
+        console.log('Querying for line size...');
+        var uid = firebase_1["default"].auth().currentUser.uid;
+        firebase_1["default"].database().ref('users/' + uid).once('value').then(function (snapshot) {
+            var DBLineRef = snapshot.val().line;
+            firebase_1["default"].database().ref(DBLineRef).once('value').then(function (snapshot) {
+                if (snapshot.val() == 1) {
+                    console.log('Line size retrieved!');
+                    callback(0);
+                }
+                else {
+                    var realSize = snapshot.numChildren();
+                    console.log('Line size retrieved!');
+                    callback(realSize);
+                }
+            });
+        });
+    };
+    LineService.prototype.getLineName = function (callback) {
+        console.log('Querying for line name...');
+        var uid = firebase_1["default"].auth().currentUser.uid;
+        firebase_1["default"].database().ref('users/' + uid).once('value').then(function (snapshot) {
+            var name = snapshot.val().line;
+            name = name.split('/')[name.split('/').length - 1];
+            callback(name);
+        });
     };
     LineService = __decorate([
         core_1.Injectable()

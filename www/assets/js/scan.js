@@ -2,8 +2,6 @@
  * Created by marcusedwards on 2017-07-01.
  */
 
-
-
 $(window).on('load', function(){
     var scan_content = 0 ;
 
@@ -12,7 +10,6 @@ $(window).on('load', function(){
             alert('A problem occured during scanning.');
             scan_content = 0 ;
         } else {
-
             alert('Code successfully scanned: ' + text);
 
             var uid = firebase.auth().currentUser.uid;
@@ -25,6 +22,10 @@ $(window).on('load', function(){
                 updates[lineName + '/' + dataKey]= {key:text};
                 firebase.database().ref().update(updates);
 
+                var oldNum = $('#size-tag').text();
+                var newNum = (parseInt(oldNum) + 1);
+                newNum = newNum.toString();
+                $('#size-tag').text(newNum);
             });
 
             scan_content = text;

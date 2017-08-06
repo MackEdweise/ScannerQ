@@ -5,11 +5,25 @@
 </ion-header>
 
 <ion-content padding>
-  <img src="assets/icon/logo.png"/>
-  <p>
-    Never Waste Time Standing in Line.
-  </p>
-  <p>
-    Use this app to collect QR codes and register users into the line-up. Hit "scan" to begin.
-  </p>
+  <div class="text-center">
+    <img class="centered padding-top" src="assets/icon/logo.png">
+    <div class="list card padding-top">
+      <div class="item item-avatar">
+        <div class="circle positive-bg">
+          <i class="fa fa-usd"></i>
+        </div>
+        <h2 id="name-tag">{{lineName}}</h2>
+        <p>Line Name</p>
+      </div>
+    </div>
+    <div class="list card padding-top">
+      <div class="item item-avatar">
+        <div class="circle positive-bg">
+          <i class="fa fa-usd"></i>
+        </div>
+        <h2 id="size-tag">{{size}}</h2>
+        <p>Line Size</p>
+      </div>
+    </div>
+  </div>
 </ion-content>

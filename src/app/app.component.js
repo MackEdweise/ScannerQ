@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var login_1 = require('../pages/login/login');
-var home_1 = require('../pages/home/home');
+var tabs_1 = require('../pages/tabs/tabs');
 var firebase_1 = require('firebase');
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
@@ -28,7 +28,7 @@ var MyApp = (function () {
             }
             else {
                 console.log("login");
-                _this.rootPage = home_1.HomePage;
+                _this.rootPage = tabs_1.TabsPage;
             }
         });
         platform.ready().then(function () {

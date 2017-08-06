@@ -1,21 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
-// declare var scannerAns: any;
+import { LineService } from '../../providers/line-service';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage {
 
-  // scanObj: any;
-  // text: string;
+export class HomePage implements OnInit {
 
-  constructor(public navCtrl: NavController) {
+  public size: number;
+  public lineName: string;
 
-    // this.scanObj = new scannerAns();
-    // this.text = this.scanObj.displayContents();
+  constructor(public navCtrl: NavController, public lineService: LineService) {}
+
+  ngOnInit(){
+      let homeController = this;
+      this.lineService.setLineSize(function(realSize){
+        homeController.size = realSize;
+        console.log(homeController.size);
+      });
+      this.lineService.getLineName(function(name){
+          homeController.lineName = name;
+          console.log(homeController.lineName);
+      });
   }
-
 }

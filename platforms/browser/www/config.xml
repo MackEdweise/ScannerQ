@@ -8,7 +8,7 @@
     </feature>
     <name>IKue Scanner</name>
     <description>An awesome Ionic/Cordova app.</description>
-    <author email="marcusedwards@hotmail.ca" href="http://www.hardboot.co">HardBoot</author>
+    <author email="marcusedwards@hotmail.ca" href="http://www.sigmadev.ca">SIGMA</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />

@@ -6,15 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-// declare var scannerAns: any;
 var HomePage = (function () {
-    // scanObj: any;
-    // text: string;
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, lineService) {
         this.navCtrl = navCtrl;
-        // this.scanObj = new scannerAns();
-        // this.text = this.scanObj.displayContents();
+        this.lineService = lineService;
     }
+    HomePage.prototype.ngOnInit = function () {
+        var homeController = this;
+        this.lineService.setLineSize(function (realSize) {
+            homeController.size = realSize;
+            console.log(homeController.size);
+        });
+        this.lineService.getLineName(function (name) {
+            homeController.lineName = name;
+            console.log(homeController.lineName);
+        });
+    };
     HomePage = __decorate([
         core_1.Component({
             selector: 'page-home',
