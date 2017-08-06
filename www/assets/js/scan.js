@@ -22,18 +22,17 @@ $(window).on('load', function(){
 
             alert('Code successfully scanned: ' + text);
 
-            // firebase.database().ref('lines/Wilfrid Laurier University/Bookstore/' + text).set({
-            //     username: "lmao"
-            // });
-
             var uid = firebase.auth().currentUser.uid;
 
-            var fDB = firebase.database().ref();
+            firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
 
-            var dataKey = fDB.child('lines/Wilfrid Laurier University/Bookstore').push().key;
-            var updates = {};
-            updates['lines/Wilfrid Laurier University/Bookstore/'+ dataKey]= {key:text};
-            fDB.update(updates);
+                var lineName = snapshot.val().line;
+                var dataKey = firebase.database().ref().child(lineName).push().key;
+                var updates = {};
+                updates[lineName + '/' + dataKey]= {key:text};
+                firebase.database().ref().update(updates);
+
+            });
 
             scan_content = text;
             scan();
