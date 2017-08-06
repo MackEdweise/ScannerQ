@@ -4,8 +4,8 @@ import { IonicPage, NavController, NavParams, LoadingController,
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthData } from '../../providers/auth-data';
 import { EmailValidator } from '../../validators/email';
-import {HomePage}from'../home/home';
-
+import { HomePage } from '../home/home';
+import { LineService } from '../../providers/line-service';
 
 /**
  * Generated class for the Signup page.
@@ -26,11 +26,14 @@ export class Signup {
 
     constructor(public nav: NavController, public authData: AuthData,
         public formBuilder: FormBuilder, public loadingCtrl: LoadingController,
-        public alertCtrl: AlertController) {
+        public alertCtrl: AlertController, public lineService: LineService) {
 
         this.signupForm = formBuilder.group({
             email: ['', Validators.compose([Validators.required, EmailValidator.isValid])],
-            password: ['', Validators.compose([Validators.minLength(6), Validators.required])]
+            password: ['', Validators.compose([Validators.minLength(6), Validators.required])],
+            line: ['', Validators.compose([Validators.required])],
+            company: ['', Validators.compose([Validators.required])],
+            name: ['', Validators.compose([Validators.required])]
         })
     }
 
@@ -44,28 +47,36 @@ export class Signup {
         if (!this.signupForm.valid) {
             console.log(this.signupForm.value);
         } else {
-            this.authData.signupUser(this.signupForm.value.email, this.signupForm.value.password)
+            this.authData.signupUser(this.signupForm.value.email, this.signupForm.value.password, this.signupForm.value.name)
                 .then(() => {
+                    this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
                     this.loading.dismiss().then(() => {
                         this.nav.setRoot(HomePage);
                     });
                 }, (error) => {
                     this.loading.dismiss().then(() => {
-                        let alert = this.alertCtrl.create({
-                            message: error.message,
-                            buttons: [
-                                {
-                                    text: "Ok",
-                                    role: 'cancel'
-                                }
-                            ]
-                        });
-                        alert.present();
+                        if(error['code'] = "auth/email-already-in-use"){
+                            this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
+                            this.loading.dismiss().then(() => {
+                                this.nav.setRoot(HomePage);
+                            });
+                        }
+                        else {
+                            let alert = this.alertCtrl.create({
+                                message: error.message,
+                                buttons: [
+                                    {
+                                        text: "Ok",
+                                        role: 'cancel'
+                                    }
+                                ]
+                            });
+                            alert.present();
+                        }
                     });
                 });
             this.loading = this.loadingCtrl.create();
             this.loading.present();
         }
     }
-
 }

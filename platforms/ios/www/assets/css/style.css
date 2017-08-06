@@ -1,0 +1,9 @@
+.centered {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.padding-top{
+    margin-top: 20px;
+}

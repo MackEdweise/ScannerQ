@@ -20,6 +20,8 @@ import { AuthData } from '../providers/auth-data';
 
 import { AngularFireModule } from '../../node_modules/angularfire2/angularfire2';
 
+import { LineService } from '../providers/line-service'
+
 // AF2 Settings
 export const firebaseConfig = {
   apiKey: "AIzaSyDE-WMV8Pz4ZtIwReSGsK7O6uC4RqOhurY",
@@ -60,6 +62,7 @@ export const firebaseConfig = {
     AuthData,
     StatusBar,
     SplashScreen,
+    LineService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

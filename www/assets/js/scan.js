@@ -26,6 +26,7 @@ $(window).on('load', function(){
             //     username: "lmao"
             // });
 
+            var uid = firebase.auth().currentUser.uid;
 
             var fDB = firebase.database().ref();
 

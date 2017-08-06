@@ -23,17 +23,27 @@ export class AuthData {
    * that node to store the profile information.
    * @param  {string} email    [User's email address]
    * @param  {string} password [User's password]
+   * @param  {string} name [User's name]
    */
-  signupUser(email: string, password: string): firebase.Promise<any> {
+  signupUser(email: string, password: string, name: string): firebase.Promise<any> {
       return firebase.auth().createUserWithEmailAndPassword(email, password).then((newUser) => {
          // firebase.database().ref('/users').child(email).set({
           //    firstName: "anonymous",
            //   id:newUser.uid,
          // });
         firebase.database().ref('/userProfile').child(newUser.uid).set({
-            firstName: "anonymous",
+            firstName: name,
              email: email
-      });
+        });
+
+        let uid = newUser.uid;
+
+        firebase.database().ref('users/'+uid).set({
+          name: name,
+          email: email,
+          userCurrent: "",
+          registered_in: Date()
+        });
     });
   }
 
