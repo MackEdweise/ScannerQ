@@ -9,7 +9,7 @@ var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
 var forms_1 = require('@angular/forms');
 var email_1 = require('../../validators/email');
-var home_1 = require('../home/home');
+var tabs_1 = require('../tabs/tabs');
 /**
  * Generated class for the Signup page.
  *
@@ -48,14 +48,29 @@ var Signup = (function () {
                 .then(function () {
                 _this.lineService.createLine(_this.signupForm.value.company, _this.signupForm.value.line);
                 _this.loading.dismiss().then(function () {
-                    _this.nav.setRoot(home_1.HomePage);
+                    _this.nav.setRoot(tabs_1.TabsPage);
                 });
             }, function (error) {
                 _this.loading.dismiss().then(function () {
                     if (error['code'] = "auth/email-already-in-use") {
-                        _this.lineService.createLine(_this.signupForm.value.company, _this.signupForm.value.line);
-                        _this.loading.dismiss().then(function () {
-                            _this.nav.setRoot(home_1.HomePage);
+                        _this.authData.loginUser(_this.signupForm.value.email, _this.signupForm.value.password).then(function (authData) {
+                            _this.loading.dismiss().then(function () {
+                                _this.lineService.createLine(_this.signupForm.value.company, _this.signupForm.value.line);
+                                _this.nav.setRoot(tabs_1.TabsPage);
+                            });
+                        }, function (error) {
+                            _this.loading.dismiss().then(function () {
+                                var alert = _this.alertCtrl.create({
+                                    message: error.message,
+                                    buttons: [
+                                        {
+                                            text: "Ok",
+                                            role: 'cancel'
+                                        }
+                                    ]
+                                });
+                                alert.present();
+                            });
                         });
                     }
                     else {

@@ -11,10 +11,13 @@ var LineService = (function () {
     function LineService() {
     }
     LineService.prototype.createLine = function (company, line) {
-        var DBLineRef = 'lines/' + company.split(' ').join('_') + '/' + line.split(' ').join('_');
+        company = company.split(' ').join('_');
+        line = line.split(' ').join('_');
+        var DBLineRef = 'lines/' + company + '/' + line;
         var uid = firebase_1["default"].auth().currentUser.uid;
         var updates = {};
-        updates['users/' + uid] = { line: DBLineRef };
+        updates['users/' + uid + '/line'] = DBLineRef;
+        updates['lines/' + company] = { line: 1 };
         firebase_1["default"].database().ref().update(updates);
     };
     LineService = __decorate([

@@ -5,10 +5,13 @@ import firebase from 'firebase';
 
 export class LineService {
     createLine(company,line) {
-        let DBLineRef =  'lines/' + company.split(' ').join('_') + '/' + line.split(' ').join('_');
+        company = company.split(' ').join('_');
+        line = line.split(' ').join('_');
+        let DBLineRef =  'lines/' + company + '/' + line;
         var uid = firebase.auth().currentUser.uid;
         var updates = {};
-        updates['users/'+uid]= {line:DBLineRef};
+        updates['users/' + uid + '/line'] = DBLineRef;
+        updates['lines/' + company] = {line:1};
         firebase.database().ref().update(updates);
     }
 }

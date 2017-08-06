@@ -7,13 +7,6 @@
 $(window).on('load', function(){
     var scan_content = 0 ;
 
-    // var database = firebase.database();
-    //
-    // var firebase = require('firebase').initializeApp({
-    //
-    // });
-
-
     function displayContents(err, text) {
         if (err) {
             alert('A problem occured during scanning.');

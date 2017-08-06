@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams, LoadingController,
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthData } from '../../providers/auth-data';
 import { EmailValidator } from '../../validators/email';
-import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 import { LineService } from '../../providers/line-service';
 
 /**
@@ -51,14 +51,29 @@ export class Signup {
                 .then(() => {
                     this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
                     this.loading.dismiss().then(() => {
-                        this.nav.setRoot(HomePage);
+                        this.nav.setRoot(TabsPage);
                     });
                 }, (error) => {
                     this.loading.dismiss().then(() => {
                         if(error['code'] = "auth/email-already-in-use"){
-                            this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
-                            this.loading.dismiss().then(() => {
-                                this.nav.setRoot(HomePage);
+                            this.authData.loginUser(this.signupForm.value.email, this.signupForm.value.password).then(authData => {
+                                this.loading.dismiss().then(() => {
+                                    this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
+                                    this.nav.setRoot(TabsPage);
+                                });
+                            }, error => {
+                                this.loading.dismiss().then(() => {
+                                    let alert = this.alertCtrl.create({
+                                        message: error.message,
+                                        buttons: [
+                                            {
+                                                text: "Ok",
+                                                role: 'cancel'
+                                            }
+                                        ]
+                                    });
+                                    alert.present();
+                                });
                             });
                         }
                         else {

@@ -7,13 +7,6 @@
 $(window).on('load', function(){
     var scan_content = 0 ;
 
-    // var database = firebase.database();
-    //
-    // var firebase = require('firebase').initializeApp({
-    //
-    // });
-
-
     function displayContents(err, text) {
         if (err) {
             alert('A problem occured during scanning.');
@@ -22,17 +15,17 @@ $(window).on('load', function(){
 
             alert('Code successfully scanned: ' + text);
 
-            // firebase.database().ref('lines/Wilfrid Laurier University/Bookstore/' + text).set({
-            //     username: "lmao"
-            // });
+            var uid = firebase.auth().currentUser.uid;
 
+            firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
 
-            var fDB = firebase.database().ref();
+                var lineName = snapshot.val().line;
+                var dataKey = firebase.database().ref().child(lineName).push().key;
+                var updates = {};
+                updates[lineName + '/' + dataKey]= {key:text};
+                firebase.database().ref().update(updates);
 
-            var dataKey = fDB.child('lines/Wilfrid Laurier University/Bookstore').push().key;
-            var updates = {};
-            updates['lines/Wilfrid Laurier University/Bookstore/'+ dataKey]= {key:text};
-            fDB.update(updates);
+            });
 
             scan_content = text;
             scan();
