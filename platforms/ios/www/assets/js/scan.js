@@ -52,7 +52,7 @@ $(window).on('load', function(){
 function scanCheck(){
 
     if($("span:contains('Scan')").closest('a').hasClass('activated')){
-        $('body').css('height','10%');
+        $('body').css('height','40%');
     }
     else if(($("span:contains('Home')").closest('a').hasClass('activated')) || ($("span:contains('Contact')").closest('a').hasClass('activated'))){
         $('body').css('height','100%');

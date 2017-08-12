@@ -1,5 +1,5 @@
 "use strict";
-var root_1 = require('./root');
+var root_1 = require("./root");
 function minimalSetImpl() {
     // THIS IS NOT a full impl of Set, this is just the minimum
     // bits of functionality we need for this library.

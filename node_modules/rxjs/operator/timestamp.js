@@ -4,8 +4,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = require('../Subscriber');
-var async_1 = require('../scheduler/async');
+var Subscriber_1 = require("../Subscriber");
+var async_1 = require("../scheduler/async");
 /**
  * @param scheduler
  * @return {Observable<Timestamp<any>>|WebSocketSubject<T>|Observable<T>}
@@ -38,8 +38,9 @@ var TimestampOperator = (function () {
 var TimestampSubscriber = (function (_super) {
     __extends(TimestampSubscriber, _super);
     function TimestampSubscriber(destination, scheduler) {
-        _super.call(this, destination);
-        this.scheduler = scheduler;
+        var _this = _super.call(this, destination) || this;
+        _this.scheduler = scheduler;
+        return _this;
     }
     TimestampSubscriber.prototype._next = function (value) {
         var now = this.scheduler.now();

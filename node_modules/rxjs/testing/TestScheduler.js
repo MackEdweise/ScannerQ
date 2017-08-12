@@ -4,21 +4,22 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = require('../Observable');
-var Notification_1 = require('../Notification');
-var ColdObservable_1 = require('./ColdObservable');
-var HotObservable_1 = require('./HotObservable');
-var SubscriptionLog_1 = require('./SubscriptionLog');
-var VirtualTimeScheduler_1 = require('../scheduler/VirtualTimeScheduler');
+var Observable_1 = require("../Observable");
+var Notification_1 = require("../Notification");
+var ColdObservable_1 = require("./ColdObservable");
+var HotObservable_1 = require("./HotObservable");
+var SubscriptionLog_1 = require("./SubscriptionLog");
+var VirtualTimeScheduler_1 = require("../scheduler/VirtualTimeScheduler");
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
     function TestScheduler(assertDeepEqual) {
-        _super.call(this, VirtualTimeScheduler_1.VirtualAction, defaultMaxFrame);
-        this.assertDeepEqual = assertDeepEqual;
-        this.hotObservables = [];
-        this.coldObservables = [];
-        this.flushTests = [];
+        var _this = _super.call(this, VirtualTimeScheduler_1.VirtualAction, defaultMaxFrame) || this;
+        _this.assertDeepEqual = assertDeepEqual;
+        _this.hotObservables = [];
+        _this.coldObservables = [];
+        _this.flushTests = [];
+        return _this;
     }
     TestScheduler.prototype.createTime = function (marbles) {
         var indexOf = marbles.indexOf('|');

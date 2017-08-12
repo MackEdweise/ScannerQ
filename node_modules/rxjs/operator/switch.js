@@ -4,8 +4,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = require('../OuterSubscriber');
-var subscribeToResult_1 = require('../util/subscribeToResult');
+var OuterSubscriber_1 = require("../OuterSubscriber");
+var subscribeToResult_1 = require("../util/subscribeToResult");
 /**
  * Converts a higher-order Observable into a first-order Observable by
  * subscribing to only the most recently emitted of those inner Observables.
@@ -68,9 +68,10 @@ var SwitchOperator = (function () {
 var SwitchSubscriber = (function (_super) {
     __extends(SwitchSubscriber, _super);
     function SwitchSubscriber(destination) {
-        _super.call(this, destination);
-        this.active = 0;
-        this.hasCompleted = false;
+        var _this = _super.call(this, destination) || this;
+        _this.active = 0;
+        _this.hasCompleted = false;
+        return _this;
     }
     SwitchSubscriber.prototype._next = function (value) {
         this.unsubscribeInner();

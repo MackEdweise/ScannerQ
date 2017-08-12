@@ -1,5 +1,5 @@
 "use strict";
-var errorObject_1 = require('./errorObject');
+var errorObject_1 = require("./errorObject");
 var tryCatchTarget;
 function tryCatcher() {
     try {

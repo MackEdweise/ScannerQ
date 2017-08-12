@@ -1,6 +1,6 @@
 "use strict";
-var AsyncSubject_1 = require('../AsyncSubject');
-var multicast_1 = require('./multicast');
+var AsyncSubject_1 = require("../AsyncSubject");
+var multicast_1 = require("./multicast");
 /**
  * @return {ConnectableObservable<T>}
  * @method publishLast

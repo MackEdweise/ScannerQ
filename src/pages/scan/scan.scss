@@ -1,3 +1,12 @@
-page-about {
+page-scan {
+  .list.card {
+    border-top: 3px solid #488aff;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
 
+  .contact{
+    margin-left: 20px;
+  }
 }

@@ -1,5 +1,5 @@
 "use strict";
-var root_1 = require('./root');
+var root_1 = require("./root");
 var RequestAnimationFrameDefinition = (function () {
     function RequestAnimationFrameDefinition(root) {
         if (root.requestAnimationFrame) {

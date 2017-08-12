@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = require('../Subscriber');
+var Subscriber_1 = require("../Subscriber");
 /**
  * Emits the given constant value on the output Observable every time the source
  * Observable emits a value.
@@ -52,8 +52,9 @@ var MapToOperator = (function () {
 var MapToSubscriber = (function (_super) {
     __extends(MapToSubscriber, _super);
     function MapToSubscriber(destination, value) {
-        _super.call(this, destination);
-        this.value = value;
+        var _this = _super.call(this, destination) || this;
+        _this.value = value;
+        return _this;
     }
     MapToSubscriber.prototype._next = function (x) {
         this.destination.next(this.value);

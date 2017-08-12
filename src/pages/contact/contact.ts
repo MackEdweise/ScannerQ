@@ -1,14 +1,46 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController,
+    AlertController } from 'ionic-angular';
+import { FormBuilder, Validators } from '@angular/forms';
+import { PhoneValidator } from '../../validators/phone';
+import { LineService } from '../../providers/line-service';
 
+@IonicPage()
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController) {
+  public contactForm;
+  public serving: string;
 
+  constructor(public navCtrl: NavController, public formBuilder: FormBuilder,
+              public loadingCtrl: LoadingController, public alertCtrl: AlertController,
+              public lineService: LineService) {
+
+    this.contactForm = formBuilder.group({
+      phone: ['', Validators.compose([PhoneValidator.isValid])],
+      name: ['', Validators.compose([Validators.required])]
+    })
+  }
+  joinLine() {
+    let service = this;
+    if (!this.contactForm.valid) {
+      console.log(this.contactForm.value);
+    } else {
+      this.lineService.joinWithPhone(function(){
+        alert('Successfully joined with contact info.');
+        service.lineService.setLineSize();
+      },this.contactForm.value.name,this.contactForm.value.phone);
+    }
   }
 
+  ionViewDidLoad() {
+    this.getServing();
+  }
+
+  getServing(){
+    this.lineService.serving.subscribe(serving => this.serving = serving);
+  }
 }

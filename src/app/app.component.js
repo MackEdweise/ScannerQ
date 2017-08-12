@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var login_1 = require('../pages/login/login');
-var tabs_1 = require('../pages/tabs/tabs');
 var firebase_1 = require('firebase');
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
@@ -22,14 +21,17 @@ var MyApp = (function () {
         };
         firebase_1["default"].initializeApp(config);
         firebase_1["default"].auth().onAuthStateChanged(function (user) {
-            if (!user) {
-                console.log("not login");
-                _this.rootPage = login_1.Login;
-            }
-            else {
-                console.log("login");
-                _this.rootPage = tabs_1.TabsPage;
-            }
+            _this.rootPage = login_1.Login;
+            // if (!user) {
+            //   console.log("not login");
+            //   this.rootPage = Login;
+            //
+            //
+            // } else {
+            //   console.log("login");
+            //   this.rootPage = TabsPage;
+            //
+            // }
         });
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.

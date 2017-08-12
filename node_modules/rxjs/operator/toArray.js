@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = require('../Subscriber');
+var Subscriber_1 = require("../Subscriber");
 /**
  * @return {Observable<any[]>|WebSocketSubject<T>|Observable<T>}
  * @method toArray
@@ -30,8 +30,9 @@ var ToArrayOperator = (function () {
 var ToArraySubscriber = (function (_super) {
     __extends(ToArraySubscriber, _super);
     function ToArraySubscriber(destination) {
-        _super.call(this, destination);
-        this.array = [];
+        var _this = _super.call(this, destination) || this;
+        _this.array = [];
+        return _this;
     }
     ToArraySubscriber.prototype._next = function (x) {
         this.array.push(x);

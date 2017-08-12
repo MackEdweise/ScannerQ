@@ -26,16 +26,18 @@ export class MyApp {
     firebase.initializeApp(config);
     firebase.auth().onAuthStateChanged((user) => {
 
-      if (!user) {
-        console.log("not login");
-        this.rootPage = Login;
+      this.rootPage = Login;
 
-
-      } else {
-        console.log("login");
-        this.rootPage = TabsPage;
-
-      }
+      // if (!user) {
+      //   console.log("not login");
+      //   this.rootPage = Login;
+      //
+      //
+      // } else {
+      //   console.log("login");
+      //   this.rootPage = TabsPage;
+      //
+      // }
 
     });
 

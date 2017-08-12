@@ -1,20 +1,44 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Join Line With Contact Info
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <div class="text-center">
+    <img class="centered padding-top" src="assets/icon/logo.png">
+  </div>
+  <form [formGroup]="contactForm" (submit)="joinLine()" novalidate>
     <ion-item>
-      <img src="assets/icon/logo.png"/>
-        Made by <a href="http://www.ikue.co">IKue</a>.
+      <ion-label stacked>Join With Your Name*</ion-label>
+      <ion-input #name formControlName="name" type="text" placeholder="Your name"
+                 [class.invalid]="!contactForm.controls.name.valid && contactForm.controls.name.dirty">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message"
+              *ngIf="!contactForm.controls.name.valid  && contactForm.controls.name.dirty">
+      <p>Please enter a valid name.</p>
     </ion-item>
     <ion-item>
-      <img src="assets/icon/hbicon-box.png"/>
-        With help from <a href="http://www.hardboot.co">HardBoot</a>.
+      <ion-label stacked>Phone Number</ion-label>
+      <ion-input #phone formControlName="phone" type="text" placeholder="Your phone number"
+                 [class.invalid]="!contactForm.controls.phone.valid && contactForm.controls.phone.dirty">
+      </ion-input>
     </ion-item>
-  </ion-list>
+    <ion-item class="error-message"
+              *ngIf="!contactForm.controls.phone.valid  && contactForm.controls.phone.dirty">
+      <p>Please enter a valid number.</p>
+    </ion-item>
+    <button ion-button block type="submit">
+      Join line
+    </button>
+  </form>
+  <div class="list card padding-top">
+    <div class="inner">
+      <h2 id="serving-tag">{{serving}}</h2>
+      <p>Now Serving</p>
+    </div>
+  </div>
 </ion-content>
