@@ -59,9 +59,6 @@ export class LineService {
         firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
             var lineName = snapshot.val().line;
             var dataKey = firebase.database().ref().child(lineName).push().key;
-            var updates = {};
-            updates[lineName + '/' + dataKey]= {phone:number,name:name};
-            firebase.database().ref().update(updates);
 
             let dummyUid = name.split(' ').join('_') + number.split(' ').join('_');
 
@@ -71,6 +68,11 @@ export class LineService {
                 userCurrent: "",
                 registered_in: Date()
             });
+
+            var updates = {};
+            updates[lineName + '/' + dataKey]= {key:dummyUid};
+            firebase.database().ref().update(updates);
+
             callback();
         });
     }
