@@ -51,6 +51,9 @@ export class Signup {
                 .then(() => {
                     this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
                     this.loading.dismiss().then(() => {
+                        this.lineService.getLineRef(function(DBLineRef){
+                            this.lineService.startNotifications(DBLineRef);
+                        });
                         this.nav.setRoot(TabsPage);
                     });
                 }, (error) => {
@@ -59,6 +62,9 @@ export class Signup {
                             this.authData.loginUser(this.signupForm.value.email, this.signupForm.value.password).then(authData => {
                                 this.loading.dismiss().then(() => {
                                     this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
+                                    this.lineService.getLineRef(function(DBLineRef){
+                                        this.lineService.startNotifications(DBLineRef);
+                                    });
                                     this.nav.setRoot(TabsPage);
                                 });
                             }, error => {

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
+import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 
@@ -8,12 +10,25 @@ export class LineService {
 
     public lineSize: BehaviorSubject<number>;
     public serving: BehaviorSubject<string>;
+    public postResponse: string;
 
-    constructor(){
+    constructor(private http: Http){
         this.lineSize = new BehaviorSubject(0);
         this.serving = new BehaviorSubject('None');
     }
 
+    startNotifications(DBLineRef){
+        let company = DBLineRef.split('/')[DBLineRef.split('/').length - 2];
+        let line = DBLineRef.split('/')[DBLineRef.split('/').length - 1];
+
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        this.http.post('http://gentle-forest-16873/line',
+            JSON.stringify({company:company,name:line}),
+            {headers:headers})
+            .map((res: Response) => res.json())
+            .subscribe((res: String) => this.postResponse = res);
+    }
     createLine(company,line) {
         company = company.split(' ').join('_');
         line = line.split(' ').join('_');
@@ -43,6 +58,13 @@ export class LineService {
                     service.lineSize.next(realSize);
                 }
             });
+        });
+    }
+    getLineRef(callback){
+        let uid = firebase.auth().currentUser.uid;
+        firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
+            let name = snapshot.val().line;
+            callback(name);
         });
     }
     getLineName(callback){

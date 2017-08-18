@@ -9,6 +9,8 @@ import { TabsPage }from'../tabs/tabs';
 
 import { ResetPassword } from '../reset-password/reset-password';
 import { Signup } from '../signup/signup';
+import { LineService } from '../../providers/line-service';
+
 /**
  * Generated class for the Login page.
  *
@@ -24,10 +26,10 @@ export class Login {
     public loginForm;
     loading: any;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams
-        , public formBuilder: FormBuilder,
-        public alertCtrl: AlertController, public loadingCtrl: LoadingController,
-        public authData: AuthData, public nav: NavController) {
+    constructor(public navCtrl: NavController, public navParams: NavParams,
+                public formBuilder: FormBuilder, public lineService: LineService,
+                public alertCtrl: AlertController, public loadingCtrl: LoadingController,
+                public authData: AuthData, public nav: NavController) {
 
         this.loginForm = formBuilder.group({
             email: ['', Validators.compose([Validators.required, EmailValidator.isValid])],
@@ -42,6 +44,9 @@ export class Login {
         } else {
             this.authData.loginUser(this.loginForm.value.email, this.loginForm.value.password).then(authData => {
                 this.loading.dismiss().then(() => {
+                    this.lineService.getLineRef(function(DBLineRef){
+                        this.lineService.startNotifications(DBLineRef);
+                    });
                     this.nav.setRoot(TabsPage);
                 });
             }, error => {
