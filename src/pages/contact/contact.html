@@ -1,26 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Join Line With Contact Info
+      Join Line With Phone #
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div class="text-center">
-    <img class="centered padding-top" src="assets/icon/logo.png">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="list card padding-top">
+          <div class="inner text-left">
+            <h2 id="serving-tag">Now Serving: {{serving}}</h2>
+            <h2>Current Queue</h2>
+            <h4 id="name-tag">Line name: {{lineName}}</h4>
+            <h4 id="size-tag">Line size: {{size}}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="centered padding-top logo" src="assets/icon/logo.png">
+      </div>
+    </div>
   </div>
-  <form [formGroup]="contactForm" (submit)="joinLine()" novalidate>
-    <ion-item>
-      <ion-label stacked>Join With Your Name*</ion-label>
-      <ion-input #name formControlName="name" type="text" placeholder="Your name"
-                 [class.invalid]="!contactForm.controls.name.valid && contactForm.controls.name.dirty">
-      </ion-input>
-    </ion-item>
-    <ion-item class="error-message"
-              *ngIf="!contactForm.controls.name.valid  && contactForm.controls.name.dirty">
-      <p>Please enter a valid name.</p>
-    </ion-item>
+  <form [formGroup]="contactForm" class="padding-top" (submit)="joinLine()" novalidate>
     <ion-item>
       <ion-label stacked>Phone Number</ion-label>
       <ion-input #phone formControlName="phone" type="text" placeholder="Your phone number"
@@ -31,14 +35,8 @@
               *ngIf="!contactForm.controls.phone.valid  && contactForm.controls.phone.dirty">
       <p>Please enter a valid number.</p>
     </ion-item>
-    <button ion-button block type="submit">
+    <button ion-button block clear type="submit">
       Join line
     </button>
   </form>
-  <div class="list card padding-top">
-    <div class="inner">
-      <h2 id="serving-tag">{{serving}}</h2>
-      <p>Now Serving</p>
-    </div>
-  </div>
 </ion-content>

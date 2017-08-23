@@ -2,11 +2,13 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
 
 import { ScanPage } from '../pages/scan/scan';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { PhonePage } from '../pages/phone/phone';
+import { NoPhonePage } from '../pages/no-phone/no-phone';
 
 import { Login } from '../pages/login/login';
 
@@ -37,12 +39,14 @@ export const firebaseConfig = {
     ScanPage,
     ContactPage,
     HomePage,
-    TabsPage,
     Login,
     ResetPassword,
-    Signup
+    Signup,
+    PhonePage,
+    NoPhonePage
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig)
@@ -53,10 +57,11 @@ export const firebaseConfig = {
     ScanPage,
     ContactPage,
     HomePage,
-    TabsPage,
     Login,
     ResetPassword,
-    Signup
+    Signup,
+    PhonePage,
+    NoPhonePage
   ],
   providers: [
     AuthData,

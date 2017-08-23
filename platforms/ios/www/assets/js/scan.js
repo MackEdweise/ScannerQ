@@ -7,7 +7,7 @@ $(window).on('load', function(){
 
     function displayContents(err, text) {
         if (err) {
-            alert('A problem occured during scanning.');
+            alert('Scan attempt not successful. Please try again.');
             scan_content = 0 ;
         } else {
             alert('Code successfully scanned: ' + text);
@@ -46,15 +46,12 @@ $(window).on('load', function(){
     }
 
     scan();
-    window.setInterval(scanCheck,10);
+    setInterval(function(){
+        if($('#scan-header').length > 0){
+            $('body').css('height','50%');
+        }
+        else{
+            $('body').css('height','100%');
+        }
+    },100);
 });
-
-function scanCheck(){
-
-    if($("span:contains('Scan')").closest('a').hasClass('activated')){
-        $('body').css('height','40%');
-    }
-    else if(($("span:contains('Home')").closest('a').hasClass('activated')) || ($("span:contains('Contact')").closest('a').hasClass('activated'))){
-        $('body').css('height','100%');
-    }
-}

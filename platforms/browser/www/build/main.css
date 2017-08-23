@@ -25199,11 +25199,44 @@ ion-navbar.toolbar {
   }
 }
 
-page-contact .list.card {
-  border-top: 3px solid #488aff;
+page-home .list.card {
+  border-top: 3px solid grey;
   border-right: 1px solid grey;
   border-left: 1px solid grey;
   border-bottom: 1px solid grey;
+}
+
+page-home .inner {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-home .logo {
+  width: 100px;
+}
+
+page-home .padding-large-top {
+  margin-top: 50px;
+}
+
+page-contact .list.card {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+page-contact .inner {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-contact .logo {
+  width: 100px;
+}
+
+page-contact .padding-large-top {
+  margin-top: 50px;
 }
 
 page-contact .contact {
@@ -25211,23 +25244,89 @@ page-contact .contact {
 }
 
 page-home .list.card {
-  border-top: 3px solid #488aff;
+  border-top: 3px solid grey;
   border-right: 1px solid grey;
   border-left: 1px solid grey;
   border-bottom: 1px solid grey;
 }
 
-page-home .contact {
+page-home .inner {
   margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-home .logo {
+  width: 100px;
+}
+
+page-home .padding-large-top {
+  margin-top: 50px;
+}
+
+page-login .logo {
+  width: 100px;
+}
+
+page-login .padding-large-top {
+  margin-top: 50px;
+}
+
+page-no-phone .list.card {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+page-no-phone .inner {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-no-phone .logo {
+  width: 100px;
+}
+
+page-no-phone .padding-large-top {
+  margin-top: 50px;
+}
+
+page-phone .list.card {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+page-phone .inner {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-phone .logo {
+  width: 100px;
+}
+
+page-phone .padding-large-top {
+  margin-top: 50px;
 }
 
 page-scan .list.card {
-  border-top: 3px solid #488aff;
+  border-top: 3px solid grey;
   border-right: 1px solid grey;
   border-left: 1px solid grey;
   border-bottom: 1px solid grey;
 }
 
-page-scan .contact {
+page-scan .inner {
   margin-left: 20px;
+  margin-top: 20px;
+}
+
+page-scan .logo {
+  width: 100px;
+}
+
+page-scan .padding-large-top {
+  margin-top: 50px;
 }

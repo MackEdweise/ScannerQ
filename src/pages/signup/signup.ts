@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams, LoadingController,
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthData } from '../../providers/auth-data';
 import { EmailValidator } from '../../validators/email';
-import { TabsPage } from '../tabs/tabs';
+import { HomePage } from '../Home/Home';
 import { LineService } from '../../providers/line-service';
 
 /**
@@ -44,6 +44,7 @@ export class Signup {
      * If the form is invalid it will just log the form value, feel free to handle that as you like.
      */
     signupUser() {
+        let signupRef = this;
         if (!this.signupForm.valid) {
             console.log(this.signupForm.value);
         } else {
@@ -52,9 +53,9 @@ export class Signup {
                     this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
                     this.loading.dismiss().then(() => {
                         this.lineService.getLineRef(function(DBLineRef){
-                            this.lineService.startNotifications(DBLineRef);
+                            signupRef.lineService.startNotifications(DBLineRef);
                         });
-                        this.nav.setRoot(TabsPage);
+                        this.nav.setRoot(HomePage);
                     });
                 }, (error) => {
                     this.loading.dismiss().then(() => {
@@ -65,7 +66,7 @@ export class Signup {
                                     this.lineService.getLineRef(function(DBLineRef){
                                         this.lineService.startNotifications(DBLineRef);
                                     });
-                                    this.nav.setRoot(TabsPage);
+                                    this.nav.setRoot(HomePage);
                                 });
                             }, error => {
                                 this.loading.dismiss().then(() => {

@@ -5,7 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 import { EmailValidator } from '../../validators/email';
 import { AuthData } from '../../providers/auth-data';
-import { TabsPage }from'../tabs/tabs';
+import { HomePage }from'../home/home';
 
 import { ResetPassword } from '../reset-password/reset-password';
 import { Signup } from '../signup/signup';
@@ -39,15 +39,16 @@ export class Login {
     }
 
     loginUser(): void {
+        let loginRef = this;
         if (!this.loginForm.valid) {
             console.log(this.loginForm.value);
         } else {
             this.authData.loginUser(this.loginForm.value.email, this.loginForm.value.password).then(authData => {
                 this.loading.dismiss().then(() => {
                     this.lineService.getLineRef(function(DBLineRef){
-                        this.lineService.startNotifications(DBLineRef);
+                        loginRef.lineService.startNotifications(DBLineRef);
                     });
-                    this.nav.setRoot(TabsPage);
+                    this.nav.setRoot(HomePage);
                 });
             }, error => {
                 this.loading.dismiss().then(() => {

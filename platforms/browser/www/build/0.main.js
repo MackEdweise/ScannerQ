@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 333:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22,7 +22,7 @@ var SignupModule = (function () {
     return SignupModule;
 }());
 SignupModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_1__signup__["a" /* Signup */],
         ],

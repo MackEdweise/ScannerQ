@@ -6,23 +6,32 @@
 
 <ion-content padding>
   <div class="text-center">
-    <img class="centered padding-top" src="assets/icon/logo.png">
-    <div class="list card padding-top">
-      <div class="inner">
-        <h2 class="inner" id="name-tag">{{lineName}}</h2>
-        <p class="inner">Line Name</p>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="list card padding-top">
+          <div class="inner text-left">
+            <h2 id="serving-tag">Now Serving: {{serving}}</h2>
+            <h2>Current Queue</h2>
+            <h4 id="name-tag">Line name: {{lineName}}</h4>
+            <h4 id="size-tag">Line size: {{size}}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="centered padding-top logo" src="assets/icon/logo.png">
       </div>
     </div>
-    <div class="list card padding-top">
-      <div class="inner">
-        <h2 id="size-tag">{{size}}</h2>
-        <p>Line Size</p>
+    <div class="row text-center padding-large-top">
+      <div class="col-md-4 col-md-offset-4">
+        <h2>Welcome to {{lineName}}!</h2>
       </div>
     </div>
-    <div class="list card padding-top">
-      <div class="inner">
-        <h2 id="serving-tag">{{serving}}</h2>
-        <p>Now Serving</p>
+    <div class="row text-center padding-top">
+      <div class="col-md-6">
+        <button ion-button large color="danger" (click)="goToPhone()">Phone</button>
+      </div>
+      <div class="col-md-6">
+        <button ion-button large color="danger" (click)="goToNoPhone()">No Phone</button>
       </div>
     </div>
   </div>

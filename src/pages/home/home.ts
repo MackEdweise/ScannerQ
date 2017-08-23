@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { LineService } from '../../providers/line-service';
+import { PhonePage }from'../phone/phone';
+import { NoPhonePage }from'../no-phone/no-phone';
 
 @Component({
   selector: 'page-home',
@@ -13,7 +15,7 @@ export class HomePage implements OnInit {
   public serving: string;
   public lineName: string;
 
-  constructor(public navCtrl: NavController, public lineService: LineService) {}
+  constructor(public nav: NavController, public navParams: NavParams, public navCtrl: NavController, public lineService: LineService) {}
 
     ngOnInit(){
         this.updateLineInfo();
@@ -37,5 +39,13 @@ export class HomePage implements OnInit {
 
     getServing(){
         this.lineService.serving.subscribe(serving => this.serving = serving);
+    }
+
+    goToPhone(): void {
+        this.nav.push(PhonePage);
+    }
+
+    goToNoPhone(): void {
+        this.nav.push(NoPhonePage);
     }
 }

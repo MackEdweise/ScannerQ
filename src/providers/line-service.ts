@@ -12,7 +12,7 @@ export class LineService {
     public serving: BehaviorSubject<string>;
     public postResponse: string;
 
-    constructor(private http: Http){
+    constructor(public http: Http){
         this.lineSize = new BehaviorSubject(0);
         this.serving = new BehaviorSubject('None');
     }
@@ -23,11 +23,11 @@ export class LineService {
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873/line',
+        this.http.post('http://gentle-forest-16873.herokuapp.com/line',
             JSON.stringify({company:company,name:line}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: String) => this.postResponse = res);
+            .subscribe((res: string) => this.postResponse = res);
     }
     createLine(company,line) {
         company = company.split(' ').join('_');
@@ -86,7 +86,7 @@ export class LineService {
 
             firebase.database().ref('users/'+dummyUid).set({
                 name: name,
-                number: number,
+                phone: number,
                 userCurrent: "",
                 registered_in: Date()
             });

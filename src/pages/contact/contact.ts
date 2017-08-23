@@ -14,14 +14,15 @@ export class ContactPage {
 
   public contactForm;
   public serving: string;
+  public size: number;
+  public lineName: string;
 
   constructor(public navCtrl: NavController, public formBuilder: FormBuilder,
               public loadingCtrl: LoadingController, public alertCtrl: AlertController,
               public lineService: LineService) {
 
     this.contactForm = formBuilder.group({
-      phone: ['', Validators.compose([PhoneValidator.isValid])],
-      name: ['', Validators.compose([Validators.required])]
+      phone: ['', Validators.compose([PhoneValidator.isValid])]
     })
   }
   joinLine() {
@@ -32,12 +33,28 @@ export class ContactPage {
       this.lineService.joinWithPhone(function(){
         alert('Successfully joined with contact info.');
         service.lineService.setLineSize();
-      },this.contactForm.value.name,this.contactForm.value.phone);
+      },'',this.contactForm.value.phone);
     }
   }
 
   ionViewDidLoad() {
+    this.updateLineInfo();
+    this.getLineSize();
     this.getServing();
+  }
+
+  updateLineInfo(){
+    let homeController = this;
+    this.lineService.setServing();
+    this.lineService.setLineSize();
+    this.lineService.getLineName(function(name){
+      homeController.lineName = name.split('_').join(' ');
+      console.log(homeController.lineName);
+    });
+  }
+
+  getLineSize(){
+    this.lineService.lineSize.subscribe(size => this.size = size);
   }
 
   getServing(){
