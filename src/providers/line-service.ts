@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
+import { LeadmeService } from 'leadme-service';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import 'rxjs/add/operator/map';
@@ -12,7 +13,7 @@ export class LineService {
     public serving: BehaviorSubject<string>;
     public postResponse: string;
 
-    constructor(public http: Http){
+    constructor(public http: Http, public leadmeService: LeadmeService){
         this.lineSize = new BehaviorSubject(0);
         this.serving = new BehaviorSubject('None');
     }
@@ -94,6 +95,9 @@ export class LineService {
             var updates = {};
             updates[lineName + '/' + dataKey]= {key:dummyUid};
             firebase.database().ref().update(updates);
+
+            this.leadmeService.leadmeRegisterCustomer(name, name + '_' + number + '_' + lineName + '_dummy@ikue.co',number);
+            this.leadmeService.leadmeData(dummyUid);
 
             callback();
         });

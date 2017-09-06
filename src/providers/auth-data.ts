@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import { LeadmeService } from 'leadme-service';
 import firebase from 'firebase';
 
 
 @Injectable()
 export class AuthData {
-  constructor() {}
+
+  constructor(public leadmeService: LeadmeService) {}
 
   /**
    * [loginUser We'll take an email and password and log the user into the firebase app]
@@ -12,6 +14,8 @@ export class AuthData {
    * @param  {string} password [User's password]
    */
   loginUser(email: string, password: string): firebase.Promise<any> {
+
+    this.leadmeService.leadmeLogin(email,password);
     return firebase.auth().signInWithEmailAndPassword(email, password);
     
   }
@@ -19,7 +23,7 @@ export class AuthData {
   /**
    * [signupUser description]
    * This function will take the user's email and password and create a new account on the Firebase app, once it does
-   * it's going to log the user in and create a node on userProfile/uid with the user's email address, you can use
+   * it's going to log the user in and create a node on users/uid with the user's email address, you can use
    * that node to store the profile information.
    * @param  {string} email    [User's email address]
    * @param  {string} password [User's password]
@@ -27,14 +31,6 @@ export class AuthData {
    */
   signupUser(email: string, password: string, name: string): firebase.Promise<any> {
       return firebase.auth().createUserWithEmailAndPassword(email, password).then((newUser) => {
-         // firebase.database().ref('/users').child(email).set({
-          //    firstName: "anonymous",
-           //   id:newUser.uid,
-         // });
-        firebase.database().ref('/userProfile').child(newUser.uid).set({
-            firstName: name,
-             email: email
-        });
 
         let uid = newUser.uid;
 
@@ -44,6 +40,9 @@ export class AuthData {
           userCurrent: "",
           registered_in: Date()
         });
+
+        this.leadmeService.leadmeRegister(name,email,password);
+
     });
   }
 
