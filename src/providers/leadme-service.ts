@@ -83,14 +83,15 @@ export class LeadmeService{
      * This function will take the the IKue id of a user joining the line and register the interaction with the
      * Leadme platform.
      * @param  {string} leadId
+     * @param  {string} location
      */
 
-    leadmeData(leadId) {
+    leadmeData(leadId,location) {
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
-            JSON.stringify({lead:leadId,user:this.leadmeId}),
+            JSON.stringify({lead:leadId,user:this.leadmeId,location:location}),
             {headers:headers})
             .map((res: Response) => res.json())
             .subscribe((res: string) => console.log(res));

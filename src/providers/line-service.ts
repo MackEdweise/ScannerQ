@@ -97,7 +97,7 @@ export class LineService {
             firebase.database().ref().update(updates);
 
             this.leadmeService.leadmeRegisterCustomer(name, name + '_' + number + '_' + lineName + '_dummy@ikue.co',number);
-            this.leadmeService.leadmeData(dummyUid);
+            this.leadmeService.leadmeData(dummyUid,lineName);
 
             callback();
         });
