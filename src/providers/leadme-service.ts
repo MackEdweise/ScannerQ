@@ -1,29 +1,36 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 
 export class LeadmeService{
 
     public leadmeId: number;
+    public customerId: BehaviorSubject<number>;
 
-    constructor(public http: Http){}
+    constructor(public http: Http){
+        this.customerId = new BehaviorSubject(-1);
+    }
 
     /**
-     * [leadmeLogin Will take an email and password and log the user into the Leadme platform]
+     * [leadmeLogin description]
+     * Will take an email and password and log the user into the Leadme platform.
      * @param  {string} email    [User's email address]
      * @param  {string} password [User's password]
      */
     leadmeLogin(email, password) {
 
+        let service = this;
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => this.leadmeId = res.id);
+            .subscribe((res: string) => service.leadmeId = res.id);
     }
 
     /**
@@ -37,7 +44,9 @@ export class LeadmeService{
      */
 
     leadmeRegister(name, email, pass) {
-        var userId = '';
+
+        let userId = '';
+        let service = this;
 
         firebase.database().ref().child('users').orderByChild('email').equalTo(email).once('value', function(snap) {
             userId = snap.val().key;
@@ -49,7 +58,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => this.leadmeId = res.id);
+            .subscribe((res: string) => service.leadmeId = res.id);
     }
 
     /**
@@ -63,7 +72,9 @@ export class LeadmeService{
      */
 
     leadmeRegisterCustomer(name, email, pass) {
-        var userId = '';
+
+        let userId = '';
+        let service = this;
 
         firebase.database().ref().child('users').orderByChild('email').equalTo(email).once('value', function(snap) {
             userId = snap.val().key;
@@ -75,7 +86,26 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => console.log(res));
+            .subscribe((res: string) => service.customerId.next(res.id));
+    }
+
+    /**
+     * [leadmeLoginCustomer description]
+     * leadmeLoginCustomer will take an email and password and log the user into the Leadme platform. This does not set the
+     * id of the scanner.
+     * @param  {string} email    [User's email address]
+     * @param  {string} password [User's password]
+     */
+    leadmeLoginCustomer(email, password) {
+
+        let service = this;
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
+            JSON.stringify({email:email,password:password}),
+            {headers:headers})
+            .map((res: Response) => res.json())
+            .subscribe((res: string) => service.customerId.next(res.id));
     }
 
     /**

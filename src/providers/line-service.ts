@@ -12,10 +12,16 @@ export class LineService {
     public lineSize: BehaviorSubject<number>;
     public serving: BehaviorSubject<string>;
     public postResponse: string;
+    public customerId: number;
 
     constructor(public http: Http, public leadmeService: LeadmeService){
         this.lineSize = new BehaviorSubject(0);
         this.serving = new BehaviorSubject('None');
+        this.getCustomerId();
+    }
+
+    getCustomerId(){
+        this.leadmeService.customerId.subscribe(customerId => this.customerId = customerId);
     }
 
     startNotifications(DBLineRef){
@@ -78,6 +84,8 @@ export class LineService {
         });
     }
     joinWithPhone(callback, name, number){
+
+        let service = this;
         let uid = firebase.auth().currentUser.uid;
         firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
             var lineName = snapshot.val().line;
@@ -96,7 +104,12 @@ export class LineService {
             updates[lineName + '/' + dataKey]= {key:dummyUid};
             firebase.database().ref().update(updates);
 
-            this.leadmeService.leadmeRegisterCustomer(name, name + '_' + number + '_' + lineName + '_dummy@ikue.co',number);
+            this.leadmeService.leadmeLoginCustomer(name, name + '_' + number + '_dummy@ikue.co').then( function(){
+                    if(service.customerId == -1){
+                        service.leadmeService.leadmeRegisterCustomer(name, name + '_' + number + '_dummy@ikue.co',number);
+                    }
+                }
+            );
             this.leadmeService.leadmeData(dummyUid,lineName);
 
             callback();

@@ -3,7 +3,7 @@
  */
 
 $(window).on('load', function(){
-    var scan_content = 0 ;
+    var scan_content = 0;
 
     function displayContents(err, text) {
         if (err) {
@@ -26,6 +26,21 @@ $(window).on('load', function(){
                 var newNum = (parseInt(oldNum) + 1);
                 newNum = newNum.toString();
                 $('#size-tag').text(newNum);
+
+                firebase.database().ref('leadmeUsers/' + uid).once('value').then(function (snapshot) {
+                    leadmeId = snapshot.val();
+
+                    firebase.database().ref('leadmeUsers/' + text).once('value').then(function (snapshot) {
+                        leadId = snapshot.val();
+
+                        $.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
+                            {
+                                lead:leadId,
+                                user:leadmeId,
+                                location:lineName
+                            });
+                    });
+                });
             });
 
             scan_content = text;
@@ -53,5 +68,5 @@ $(window).on('load', function(){
         else{
             $('body').css('height','100%');
         }
-    },100);
+    },1000);
 });
