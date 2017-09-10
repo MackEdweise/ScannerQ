@@ -30,7 +30,7 @@ export class LeadmeService{
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => service.leadmeId = res.id);
+            .subscribe((res) => service.leadmeId = res.id);
     }
 
     /**
@@ -58,7 +58,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => service.leadmeId = res.id);
+            .subscribe((res) => service.leadmeId = res.id);
     }
 
     /**
@@ -86,7 +86,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => service.customerId.next(res.id));
+            .subscribe((res) => service.customerId.next(res.id));
     }
 
     /**
@@ -105,7 +105,7 @@ export class LeadmeService{
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => service.customerId.next(res.id));
+            .subscribe((res) => service.customerId.next(res.id));
     }
 
     /**
@@ -124,6 +124,6 @@ export class LeadmeService{
             JSON.stringify({lead:leadId,user:this.leadmeId,location:location}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res: string) => console.log(res));
+            .subscribe((res) => console.log(res));
     }
 }

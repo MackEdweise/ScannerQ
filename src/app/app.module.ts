@@ -23,6 +23,7 @@ import { AuthData } from '../providers/auth-data';
 import { AngularFireModule } from '../../node_modules/angularfire2/angularfire2';
 
 import { LineService } from '../providers/line-service'
+import { LeadmeService } from '../providers/leadme-service'
 
 // AF2 Settings
 export const firebaseConfig = {
@@ -68,6 +69,7 @@ export const firebaseConfig = {
     StatusBar,
     SplashScreen,
     LineService,
+    LeadmeService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

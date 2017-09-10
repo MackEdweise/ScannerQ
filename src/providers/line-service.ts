@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
-import { LeadmeService } from 'leadme-service';
+import { LeadmeService } from './leadme-service';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import 'rxjs/add/operator/map';

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LeadmeService } from 'leadme-service';
+import { LeadmeService } from './leadme-service';
 import firebase from 'firebase';
 
 

@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d33d87e-7db4-4113-9fdb-a32218245d1c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/0.main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/0.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/1.main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/1.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/2.main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/2.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/3.main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/3.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/0.main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/0.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/1.main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/1.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/2.main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/2.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/3.main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/3.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/browser/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/signup/signup.html" afterPath="$PROJECT_DIR$/src/pages/signup/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/auth-data.ts" afterPath="$PROJECT_DIR$/src/providers/auth-data.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/leadme-service.ts" afterPath="$PROJECT_DIR$/src/providers/leadme-service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/line-service.ts" afterPath="$PROJECT_DIR$/src/providers/line-service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/0.main.js" afterPath="$PROJECT_DIR$/www/build/0.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/1.main.js" afterPath="$PROJECT_DIR$/www/build/1.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/2.main.js" afterPath="$PROJECT_DIR$/www/build/2.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/3.main.js" afterPath="$PROJECT_DIR$/www/build/3.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
     </list>
     <ignored path="ScannerQ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,26 +56,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scan.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,6 +76,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="phone.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/phone/phone.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scan.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scan.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="185">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -88,8 +121,8 @@
       <file leaf-file-name="leadme-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="123" column="76" selection-start-line="123" selection-start-column="68" selection-end-line="123" selection-end-column="76" />
+            <state relative-caret-position="165">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -100,10 +133,34 @@
       <file leaf-file-name="line-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="75">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth-data.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/providers/auth-data.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/pages/login/login.ts" />
         <option value="$PROJECT_DIR$/src/pages/signup/signup.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.ts" />
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.modue.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
@@ -158,16 +214,17 @@
         <option value="$PROJECT_DIR$/src/pages/contact/contact.ts" />
         <option value="$PROJECT_DIR$/src/pages/contact/contact.html" />
         <option value="$PROJECT_DIR$/src/pages/contact/contact.scss" />
-        <option value="$PROJECT_DIR$/src/pages/signup/signup.html" />
         <option value="$PROJECT_DIR$/src/pages/scan/scan.scss" />
         <option value="$PROJECT_DIR$/src/pages/scan/scan.ts" />
         <option value="$PROJECT_DIR$/src/pages/scan/scan.html" />
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.html" />
         <option value="$PROJECT_DIR$/src/pages/login/login.html" />
-        <option value="$PROJECT_DIR$/src/providers/auth-data.ts" />
-        <option value="$PROJECT_DIR$/src/providers/line-service.ts" />
-        <option value="$PROJECT_DIR$/src/providers/leadme-service.ts" />
         <option value="$PROJECT_DIR$/www/assets/js/scan.js" />
+        <option value="$PROJECT_DIR$/src/providers/leadme-service.ts" />
+        <option value="$PROJECT_DIR$/src/providers/line-service.ts" />
+        <option value="$PROJECT_DIR$/src/providers/auth-data.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/signup/signup.html" />
       </list>
     </option>
   </component>
@@ -432,7 +489,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="line-service&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;leadme&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;login&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;auth&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;line&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;no-phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.ts&#10;no-phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;no-phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;scan.js&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;config.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;scan.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;scan.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.ts&#10;signup.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.html&#10;signup&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.ts&#10;home.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.scss&#10;scan.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.scss&#10;contact.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.scss&#10;home.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;home.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;contact.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.scss&#10;scan&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.ts&#10;phone.scss&#9;null&#9;null&#10;phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;home&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;app.m&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;contact&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;app.module&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;tabs.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tab&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;login.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;line-ser&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;home.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;tabs.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabs.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tabs&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabspage&#9;null&#9;null&#10;main.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/main.ts&#10;xml&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;HomePage&#9;null&#9;null&#10;component&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.component.ts&#10;angularFire&#9;null&#9;null&#10;config.xml&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/plugins/cordova-plugin-qrscanner/tests/project/config.xml&#10;app.com&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.component.ts" />
+    <property name="SearchEverywhereHistoryKey" value="login.h&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;app.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;aut&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;line&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;leadme&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;line-service&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;auth&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;no-phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.ts&#10;no-phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;no-phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;scan.js&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;config.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;scan.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;scan.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.ts&#10;signup.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.html&#10;signup&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.ts&#10;home.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.scss&#10;scan.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.scss&#10;contact.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.scss&#10;home.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;home.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;contact.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.scss&#10;scan&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.ts&#10;phone.scss&#9;null&#9;null&#10;phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;home&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;app.m&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;contact&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;app.module&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;tabs.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tab&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;login.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;line-ser&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;home.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;tabs.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabs.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tabs&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabspage&#9;null&#9;null&#10;main.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/main.ts&#10;xml&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;HomePage&#9;null&#9;null&#10;component&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.component.ts" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -562,16 +619,16 @@
       <workItem from="1503529908128" duration="1440000" />
       <workItem from="1504651988152" duration="6219000" />
       <workItem from="1504963674338" duration="1831000" />
-      <workItem from="1505083692011" duration="21000" />
+      <workItem from="1505083692011" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100791000" />
+    <option name="totallyTimeSpent" value="101779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="996" height="745" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25366876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -580,7 +637,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.237366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.237366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -741,13 +798,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.html" />
     <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -818,13 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -844,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -875,17 +911,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/auth-data.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="60" column="63" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="40" column="37" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -893,26 +925,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="123" column="76" selection-start-line="123" selection-start-column="68" selection-end-line="123" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,14 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/phone/phone.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -958,11 +963,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="185">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/auth-data.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
