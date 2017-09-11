@@ -52,11 +52,7 @@ export class AuthData {
           registered_in: Date()
         });
 
-        service.leadmeService.leadmeRegister(name,email,password).then(function(){
-          if(service.leadmeId == -1){
-           service.leadmeService.leadmeLogin(email,password);
-          }
-        });
+        service.leadmeService.leadmeRegister(name,email,password);
     });
   }
 

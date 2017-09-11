@@ -27,7 +27,7 @@ export class LeadmeService{
         let service = this;
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
+        return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
@@ -55,11 +55,11 @@ export class LeadmeService{
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeAuth',
+        return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeAuth',
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.leadmeId.next(res.id));
+            .subscribe((res) => { if(res.id == -1){ service.leadmeLogin(email,pass) } else{ service.leadmeId.next(res.id); } });
     }
 
     /**
@@ -83,7 +83,7 @@ export class LeadmeService{
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeAuth',
+        return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeAuth',
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
@@ -102,7 +102,7 @@ export class LeadmeService{
         let service = this;
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
+        return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
@@ -121,7 +121,7 @@ export class LeadmeService{
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
+        return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
             JSON.stringify({lead:leadId,user:this.leadmeId,location:location}),
             {headers:headers})
             .map((res: Response) => res.json())
