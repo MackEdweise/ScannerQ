@@ -6,7 +6,15 @@ import firebase from 'firebase';
 @Injectable()
 export class AuthData {
 
-  constructor(public leadmeService: LeadmeService) {}
+  public leadmeId: number;
+
+  constructor(public leadmeService: LeadmeService) {
+    this.getLeadmeId();
+  }
+
+  getLeadmeId(){
+    this.leadmeService.leadmeId.subscribe(leadmeId => this.leadmeId = leadmeId);
+  }
 
   /**
    * [loginUser We'll take an email and password and log the user into the firebase app]
@@ -30,6 +38,9 @@ export class AuthData {
    * @param  {string} name [User's name]
    */
   signupUser(email: string, password: string, name: string): firebase.Promise<any> {
+
+      let service = this;
+
       return firebase.auth().createUserWithEmailAndPassword(email, password).then((newUser) => {
 
         let uid = newUser.uid;
@@ -41,8 +52,11 @@ export class AuthData {
           registered_in: Date()
         });
 
-        this.leadmeService.leadmeRegister(name,email,password);
-
+        service.leadmeService.leadmeRegister(name,email,password).then(function(){
+          if(service.leadmeId == -1){
+           service.leadmeService.leadmeLogin(email,password);
+          }
+        });
     });
   }
 

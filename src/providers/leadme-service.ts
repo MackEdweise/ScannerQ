@@ -8,11 +8,12 @@ import 'rxjs/add/operator/map';
 
 export class LeadmeService{
 
-    public leadmeId: number;
+    public leadmeId: BehaviorSubject<number>;
     public customerId: BehaviorSubject<number>;
 
     constructor(public http: Http){
         this.customerId = new BehaviorSubject(-1);
+        this.leadmeId = new BehaviorSubject(-1);
     }
 
     /**
@@ -30,7 +31,7 @@ export class LeadmeService{
             JSON.stringify({email:email,password:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.leadmeId = res.id);
+            .subscribe((res) => service.leadmeId.next(res.id));
     }
 
     /**
@@ -58,7 +59,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.leadmeId = res.id);
+            .subscribe((res) => service.leadmeId.next(res.id));
     }
 
     /**
