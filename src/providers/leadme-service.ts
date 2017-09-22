@@ -10,10 +10,12 @@ export class LeadmeService{
 
     public leadmeId: BehaviorSubject<number>;
     public customerId: BehaviorSubject<number>;
+    public localLeadmeId: number;
 
     constructor(public http: Http){
         this.customerId = new BehaviorSubject(-1);
         this.leadmeId = new BehaviorSubject(-1);
+        this.localLeadmeId = -1;
     }
 
     /**
@@ -31,7 +33,7 @@ export class LeadmeService{
             JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.leadmeId.next(res.id));
+            .subscribe((res) => { service.leadmeId.next(res.id); service.localLeadmeId = res.id; });
     }
 
     /**
@@ -46,12 +48,7 @@ export class LeadmeService{
 
     leadmeRegister(name, email, pass) {
 
-        let userId = '';
         let service = this;
-
-        firebase.database().ref().child('users').orderByChild('email').equalTo(email).once('value', function(snap) {
-            userId = snap.val().key;
-        });
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
@@ -59,7 +56,8 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => { if(res.id == -1){ service.leadmeLogin(email,pass) } else{ service.leadmeId.next(res.id); } });
+            .subscribe((res) => { if(res.id == -1){ service.leadmeLogin(email,pass) } else{ service.leadmeId.next(res.id); service.localLeadmeId = res.id; } },
+                (err) => { service.leadmeLogin(email,pass) });
     }
 
     /**
@@ -72,14 +70,11 @@ export class LeadmeService{
      * @param  {string} name  [User's name]
      */
 
-    leadmeRegisterCustomer(name, email, pass) {
+    leadmeRegisterCustomer(callback, name, email, pass) {
 
-        let userId = '';
         let service = this;
 
-        firebase.database().ref().child('users').orderByChild('email').equalTo(email).once('value', function(snap) {
-            userId = snap.val().key;
-        });
+        console.log('registering...');
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
@@ -87,7 +82,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.customerId.next(res.id));
+            .subscribe((res) => { service.customerId.next(res.id); callback(); });
     }
 
     /**
@@ -97,7 +92,7 @@ export class LeadmeService{
      * @param  {string} email    [User's email address]
      * @param  {string} password [User's password]
      */
-    leadmeLoginCustomer(email, password) {
+    leadmeLoginCustomer(callback, email, password) {
 
         let service = this;
         let headers = new Headers();
@@ -106,7 +101,8 @@ export class LeadmeService{
             JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => service.customerId.next(res.id));
+            .subscribe((res) => { console.log(res); console.log(res['status']); if(res.id == -1){ service.leadmeRegisterCustomer(callback, '', email, password); } else{ service.customerId.next(res.id); callback(); } },
+                (err) => { service.leadmeRegisterCustomer(callback, '', email, password); } );
     }
 
     /**
@@ -119,10 +115,11 @@ export class LeadmeService{
 
     leadmeData(leadId,location) {
 
+        let service = this;
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
-            JSON.stringify({lead:leadId,user:this.leadmeId,location:location}),
+            JSON.stringify({lead:leadId,user:service.localLeadmeId,location:location}),
             {headers:headers})
             .map((res: Response) => res.json())
             .subscribe((res) => console.log(res));

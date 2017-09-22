@@ -12,7 +12,10 @@ import { LineService } from '../../providers/line-service';
 export class NoPhonePage {
 
     public nameForm;
-    public serving: st
+    public serving: string;
+    public size: number;
+    public lineName: string;
+
     constructor(public navCtrl: NavController, public formBuilder: FormBuilder,
                 public loadingCtrl: LoadingController, public alertCtrl: AlertController,
                 public lineService: LineService) {
@@ -34,7 +37,23 @@ export class NoPhonePage {
     }
 
     ionViewDidLoad() {
+        this.updateLineInfo();
+        this.getLineSize();
         this.getServing();
+    }
+
+    updateLineInfo(){
+        let noPhoneController = this;
+        this.lineService.setServing();
+        this.lineService.setLineSize();
+        this.lineService.getLineName(function(name){
+            noPhoneController.lineName = name.split('_').join(' ');
+            console.log(noPhoneController.lineName);
+        });
+    }
+
+    getLineSize(){
+        this.lineService.lineSize.subscribe(size => this.size = size);
     }
 
     getServing(){

@@ -44,12 +44,12 @@ export class ContactPage {
   }
 
   updateLineInfo(){
-    let homeController = this;
+    let contactController = this;
     this.lineService.setServing();
     this.lineService.setLineSize();
     this.lineService.getLineName(function(name){
-      homeController.lineName = name.split('_').join(' ');
-      console.log(homeController.lineName);
+      contactController.lineName = name.split('_').join(' ');
+      console.log(contactController.lineName);
     });
   }
 

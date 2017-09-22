@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams, LoadingController,
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthData } from '../../providers/auth-data';
 import { EmailValidator } from '../../validators/email';
-import { HomePage } from '../Home/Home';
+import { HomePage } from '../home/home';
 import { LineService } from '../../providers/line-service';
 
 /**
@@ -50,21 +50,22 @@ export class Signup {
         } else {
             this.authData.signupUser(this.signupForm.value.email, this.signupForm.value.password, this.signupForm.value.name)
                 .then(() => {
-                    this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
+                    signupRef.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
                     this.loading.dismiss().then(() => {
-                        this.lineService.getLineRef(function(DBLineRef){
+                        signupRef.lineService.getLineRef(function(DBLineRef){
                             signupRef.lineService.startNotifications(DBLineRef);
                         });
                         this.nav.setRoot(HomePage);
                     });
                 }, (error) => {
                     this.loading.dismiss().then(() => {
+
                         if(error['code'] = "auth/email-already-in-use"){
-                            this.authData.loginUser(this.signupForm.value.email, this.signupForm.value.password).then(authData => {
+                            signupRef.authData.loginUser(this.signupForm.value.email, this.signupForm.value.password).then(authData => {
                                 this.loading.dismiss().then(() => {
-                                    this.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
-                                    this.lineService.getLineRef(function(DBLineRef){
-                                        this.lineService.startNotifications(DBLineRef);
+                                    signupRef.lineService.createLine(this.signupForm.value.company,this.signupForm.value.line);
+                                    signupRef.lineService.getLineRef(function(DBLineRef){
+                                        signupRef.lineService.startNotifications(DBLineRef);
                                     });
                                     this.nav.setRoot(HomePage);
                                 });

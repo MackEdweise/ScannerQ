@@ -45,7 +45,8 @@ export class LineService {
         var updates = {};
 
         updates['users/' + uid + '/line'] = DBLineRef;
-        updates['lines/' + company + '/' + line] = 1;
+        updates['lines/' + company + '/' + line + '/current'] = {current:""};
+        updates['lines/' + company + '/' + line + '/meta'] = {avg_wait_time:10};
         firebase.database().ref().update(updates);
     }
     setLineSize(){
@@ -62,7 +63,7 @@ export class LineService {
                 else {
                     let realSize = snapshot.numChildren();
                     console.log('Line size retrieved!');
-                    service.lineSize.next(realSize);
+                    service.lineSize.next(realSize - 2);
                 }
             });
         });
@@ -85,35 +86,36 @@ export class LineService {
     }
     joinWithPhone(callback, name, number){
 
-        let service = this;
-        let uid = firebase.auth().currentUser.uid;
-        firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
-            var lineName = snapshot.val().line;
-            var dataKey = firebase.database().ref().child(lineName).push().key;
+        if(name.length + number.length > 0) {
+            let service = this;
+            let uid = firebase.auth().currentUser.uid;
+            firebase.database().ref('users/' + uid).once('value').then(function (snapshot) {
+                var lineName = snapshot.val().line;
+                var dataKey = firebase.database().ref().child(lineName).push().key;
 
-            let dummyUid = name.split(' ').join('_') + number.split(' ').join('_');
+                let dummyUid = name.split(' ').join('_') + number.split(' ').join('_');
 
-            firebase.database().ref('users/'+dummyUid).set({
-                name: name,
-                phone: number,
-                userCurrent: "",
-                registered_in: Date()
+                firebase.database().ref('users/' + dummyUid).set({
+                    name: name,
+                    phone: number,
+                    userCurrent: "",
+                    registered_in: Date()
+                });
+
+                var updates = {};
+                updates[lineName + '/' + dataKey] = {key: dummyUid};
+                firebase.database().ref().update(updates);
+
+                service.leadmeService.leadmeLoginCustomer(function () {
+                    service.leadmeService.leadmeData(dummyUid, lineName);
+                }, dummyUid + '_dummy@ikue.co', number);
+
+                callback();
             });
-
-            var updates = {};
-            updates[lineName + '/' + dataKey]= {key:dummyUid};
-            firebase.database().ref().update(updates);
-
-            this.leadmeService.leadmeLoginCustomer(name, name + '_' + number + '_dummy@ikue.co').then( function(){
-                    if(service.customerId == -1){
-                        service.leadmeService.leadmeRegisterCustomer(name, name + '_' + number + '_dummy@ikue.co',number);
-                    }
-                }
-            );
-            this.leadmeService.leadmeData(dummyUid,lineName);
-
-            callback();
-        });
+        }
+        else{
+            alert('Please fill out the form.');
+        }
     }
     setServing(){
         console.log('Querying for current customer...');

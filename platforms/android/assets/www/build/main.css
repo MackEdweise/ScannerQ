@@ -25199,26 +25199,6 @@ ion-navbar.toolbar {
   }
 }
 
-page-home .list.card {
-  border-top: 3px solid grey;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
-
-page-home .inner {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-page-home .logo {
-  width: 100px;
-}
-
-page-home .padding-large-top {
-  margin-top: 50px;
-}
-
 page-contact .list.card {
   border-top: 3px solid grey;
   border-right: 1px solid grey;
