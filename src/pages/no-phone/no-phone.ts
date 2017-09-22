@@ -12,8 +12,7 @@ import { LineService } from '../../providers/line-service';
 export class NoPhonePage {
 
     public nameForm;
-    public serving: string;
-
+    public serving: st
     constructor(public navCtrl: NavController, public formBuilder: FormBuilder,
                 public loadingCtrl: LoadingController, public alertCtrl: AlertController,
                 public lineService: LineService) {

@@ -28,7 +28,7 @@ export class LeadmeService{
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
-            JSON.stringify({email:email,password:password}),
+            JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
             .subscribe((res) => service.leadmeId.next(res.id));
@@ -103,7 +103,7 @@ export class LeadmeService{
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeLogin',
-            JSON.stringify({email:email,password:password}),
+            JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
             .subscribe((res) => service.customerId.next(res.id));
