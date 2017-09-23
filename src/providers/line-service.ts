@@ -84,12 +84,13 @@ export class LineService {
             callback(name);
         });
     }
-    joinWithPhone(callback, name, number){
+    joinWithInfo(callback, name, number){
 
         if(name.length + number.length > 0) {
             let service = this;
             let uid = firebase.auth().currentUser.uid;
             firebase.database().ref('users/' + uid).once('value').then(function (snapshot) {
+
                 var lineName = snapshot.val().line;
                 var dataKey = firebase.database().ref().child(lineName).push().key;
 
@@ -106,7 +107,10 @@ export class LineService {
                 updates[lineName + '/' + dataKey] = {key: dummyUid};
                 firebase.database().ref().update(updates);
 
-                service.leadmeService.leadmeLoginCustomer(function () {
+                service.leadmeService.leadmeLoginCustomer(function (leadmeId) {
+                    var updates = {};
+                    updates['leadmeUsers/' + dummyUid] = leadmeId;
+                    firebase.database().ref().update(updates);
                     service.leadmeService.leadmeData(dummyUid, lineName);
                 }, dummyUid + '_dummy@ikue.co', number);
 

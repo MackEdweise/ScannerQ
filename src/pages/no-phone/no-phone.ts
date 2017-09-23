@@ -29,7 +29,7 @@ export class NoPhonePage {
         if (!this.nameForm.valid) {
             console.log(this.nameForm.value);
         } else {
-            this.lineService.joinWithPhone(function(){
+            this.lineService.joinWithInfo(function(){
                 alert('Successfully joined with contact info.');
                 service.lineService.setLineSize();
             },this.nameForm.value.name,'');

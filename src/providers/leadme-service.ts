@@ -33,7 +33,7 @@ export class LeadmeService{
             JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => { service.leadmeId.next(res.id); service.localLeadmeId = res.id; });
+            .subscribe((res) => { service.leadmeId.next(res['res']['id']); service.localLeadmeId = res['res']['id']; });
     }
 
     /**
@@ -56,7 +56,7 @@ export class LeadmeService{
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => { if(res.id == -1){ service.leadmeLogin(email,pass) } else{ service.leadmeId.next(res.id); service.localLeadmeId = res.id; } },
+            .subscribe((res) => { service.leadmeId.next(res['res']['id']); service.localLeadmeId = res['res']['id'];  },
                 (err) => { service.leadmeLogin(email,pass) });
     }
 
@@ -73,16 +73,14 @@ export class LeadmeService{
     leadmeRegisterCustomer(callback, name, email, pass) {
 
         let service = this;
-
         console.log('registering...');
-
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('http://gentle-forest-16873.herokuapp.com/leadmeAuth',
             JSON.stringify({name:name,email:email,pass:pass}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => { service.customerId.next(res.id); callback(); });
+            .subscribe((res) => { service.customerId.next(res['res']['id']); callback(res['res']['id']); });
     }
 
     /**
@@ -101,8 +99,8 @@ export class LeadmeService{
             JSON.stringify({email:email,pass:password}),
             {headers:headers})
             .map((res: Response) => res.json())
-            .subscribe((res) => { console.log(res); console.log(res['status']); if(res.id == -1){ service.leadmeRegisterCustomer(callback, '', email, password); } else{ service.customerId.next(res.id); callback(); } },
-                (err) => { service.leadmeRegisterCustomer(callback, '', email, password); } );
+            .subscribe((res) => { console.log(res['res']['id']); service.customerId.next(res['res']['id']); callback(res['res']['id']); },
+                (err) => { service.leadmeRegisterCustomer(callback, email.split('_dummy')[0].replace('_', ' '), email, password); } );
     }
 
     /**

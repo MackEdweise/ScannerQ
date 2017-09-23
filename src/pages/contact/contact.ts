@@ -30,7 +30,7 @@ export class ContactPage {
     if (!this.contactForm.valid) {
       console.log(this.contactForm.value);
     } else {
-      this.lineService.joinWithPhone(function(){
+      this.lineService.joinWithInfo(function(){
         alert('Successfully joined with contact info.');
         service.lineService.setLineSize();
       },'',this.contactForm.value.phone);
