@@ -10,7 +10,6 @@ $(window).on('load', function(){
             alert('Scan attempt not successful. Please try again.');
             scan_content = 0 ;
         } else {
-            alert('Code successfully scanned: ' + text);
 
             var uid = firebase.auth().currentUser.uid;
 
@@ -39,6 +38,8 @@ $(window).on('load', function(){
                         });
                 });
             });
+
+            alert('Code successfully scanned: ' + text);
 
             scan_content = text;
             scan();
