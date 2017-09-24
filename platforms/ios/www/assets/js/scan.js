@@ -29,17 +29,14 @@ $(window).on('load', function(){
 
                 firebase.database().ref('leadmeUsers/' + uid).once('value').then(function (snapshot) {
                     leadmeId = snapshot.val();
+                    leadId = text;
 
-                    firebase.database().ref('leadmeUsers/' + text).once('value').then(function (snapshot) {
-                        leadId = snapshot.val();
-
-                        $.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
-                            {
-                                lead:leadId,
-                                user:leadmeId,
-                                location:lineName
-                            });
-                    });
+                    $.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
+                        {
+                            lead:leadId,
+                            user:leadmeId,
+                            location:lineName
+                        });
                 });
             });
 
@@ -49,6 +46,9 @@ $(window).on('load', function(){
     }
 
     function scan() {
+
+        console.log('beginning to scan');
+
         QRScanner = window.QRScanner;
 
         QRScanner.useFrontCamera(function(err, status){
@@ -64,9 +64,11 @@ $(window).on('load', function(){
     setInterval(function(){
         if($('#scan-header').length > 0){
             $('body').css('height','50%');
+            $('body').css('background-color', 'transparent');
         }
         else{
             $('body').css('height','100%');
+            $('body').css('background-color', 'white');
         }
     },1000);
 });
