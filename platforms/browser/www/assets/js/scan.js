@@ -19,7 +19,7 @@ $(window).on('load', function(){
                 var lineName = snapshot.val().line;
                 var dataKey = firebase.database().ref().child(lineName).push().key;
                 var updates = {};
-                updates[lineName + '/' + dataKey]= {key:text};
+                updates[lineName + '/' + dataKey]= {key:text, rem:dataKey};
                 firebase.database().ref().update(updates);
 
                 var oldNum = $('#size-tag').text();

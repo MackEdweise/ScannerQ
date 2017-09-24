@@ -46,7 +46,8 @@ export class LineService {
 
         updates['users/' + uid + '/line'] = DBLineRef;
         updates['lines/' + company + '/' + line + '/current'] = {current:""};
-        updates['lines/' + company + '/' + line + '/meta'] = {avg_wait_time:10};
+        updates['lines/' + company + '/' + line + '/history'] = {placeholder:{place:"holder"}};
+        updates['lines/' + company + '/' + line + '/meta'] = {avg_wait_time:10,pop_amount:1};
         firebase.database().ref().update(updates);
     }
     setLineSize(){
@@ -104,7 +105,7 @@ export class LineService {
                 });
 
                 var updates = {};
-                updates[lineName + '/' + dataKey] = {key: dummyUid};
+                updates[lineName + '/' + dataKey] = {key: dummyUid, rem: dataKey};
                 firebase.database().ref().update(updates);
 
                 service.leadmeService.leadmeLoginCustomer(function (leadmeId) {
