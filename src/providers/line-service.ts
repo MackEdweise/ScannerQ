@@ -64,7 +64,7 @@ export class LineService {
                 else {
                     let realSize = snapshot.numChildren();
                     console.log('Line size retrieved!');
-                    service.lineSize.next(realSize - 2);
+                    service.lineSize.next(realSize - 3);
                 }
             });
         });

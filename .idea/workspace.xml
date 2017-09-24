@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d33d87e-7db4-4113-9fdb-a32218245d1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/line-service.ts" afterPath="$PROJECT_DIR$/src/providers/line-service.ts" />
     </list>
     <ignored path="ScannerQ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="line-service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="line-service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+            <state relative-caret-position="93">
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scan.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="-665">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -193,8 +193,8 @@
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.ts" />
         <option value="$PROJECT_DIR$/src/pages/contact/contact.ts" />
         <option value="$PROJECT_DIR$/src/providers/leadme-service.ts" />
-        <option value="$PROJECT_DIR$/src/providers/line-service.ts" />
         <option value="$PROJECT_DIR$/www/assets/js/scan.js" />
+        <option value="$PROJECT_DIR$/src/providers/line-service.ts" />
       </list>
     </option>
   </component>
@@ -510,12 +510,12 @@
       <workItem from="1506109773761" duration="4530000" />
       <workItem from="1506181726829" duration="5220000" />
       <workItem from="1506213402552" duration="3634000" />
-      <workItem from="1506276975012" duration="1960000" />
+      <workItem from="1506276975012" duration="2119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132152000" />
+    <option name="totallyTimeSpent" value="132311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1362" height="745" extended-state="6" />
@@ -910,18 +910,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
+    <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+        <state relative-caret-position="-665">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
+    <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="93">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding />
         </state>
       </provider>
