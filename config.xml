@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ScannerQ" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>IKue Scanner</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="marcusedwards@hotmail.ca" href="http://www.sigmadev.ca">SIGMA</author>
@@ -35,6 +35,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <icon height="57" src="resources/icon.png" width="57" />
+        <splash height="1024" src="resources/ios-splash.png" width="768" />
     </platform>
     <engine name="android" spec="~6.1.2" />
     <engine name="ios" spec="^4.1.1" />
