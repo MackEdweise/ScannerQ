@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d33d87e-7db4-4113-9fdb-a32218245d1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/line-service.ts" afterPath="$PROJECT_DIR$/src/providers/line-service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/assets/css/style.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/css/style.css" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/browser/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/IKue Scanner.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/IKue Scanner.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/IKue Scanner/IKue Scanner-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/IKue Scanner/IKue Scanner-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/css/style.css" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/js/scan.js" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/js/scan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/contact/contact.html" afterPath="$PROJECT_DIR$/src/pages/contact/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/no-phone/no-phone.html" afterPath="$PROJECT_DIR$/src/pages/no-phone/no-phone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/phone/phone.html" afterPath="$PROJECT_DIR$/src/pages/phone/phone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/scan/scan.html" afterPath="$PROJECT_DIR$/src/pages/scan/scan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/css/style.css" afterPath="$PROJECT_DIR$/www/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
     </list>
     <ignored path="ScannerQ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,26 +45,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.ts">
+      <file leaf-file-name="no-phone.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/no-phone/no-phone.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="40" column="78" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="line-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,51 +88,39 @@
       <file leaf-file-name="phone.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/phone/phone.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="238">
+              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="no-phone.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/no-phone/no-phone.html">
+      <file leaf-file-name="scan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            <state relative-caret-position="270">
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="line-service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="238">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.ts">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="no-phone.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/no-phone/no-phone.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +128,8 @@
       <file leaf-file-name="scan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-665">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,21 +138,11 @@
       <file leaf-file-name="leadme-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth-data.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/providers/auth-data.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +174,6 @@
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-qrscanner/plugin.xml" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-qrscanner/src/ios/QRScanner.swift" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/pages/signup/signup-service.ts" />
         <option value="$PROJECT_DIR$/src/pages/signup/line-service.ts" />
         <option value="$PROJECT_DIR$/config.xml" />
@@ -172,19 +187,14 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.modue.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
-        <option value="$PROJECT_DIR$/src/pages/home/home.html" />
         <option value="$PROJECT_DIR$/src/pages/phone/phone.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/phone/phone.scss" />
         <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.scss" />
-        <option value="$PROJECT_DIR$/src/pages/phone/phone.html" />
         <option value="$PROJECT_DIR$/src/pages/phone/phone.ts" />
         <option value="$PROJECT_DIR$/src/pages/login/login.scss" />
-        <option value="$PROJECT_DIR$/src/pages/contact/contact.html" />
         <option value="$PROJECT_DIR$/src/pages/contact/contact.scss" />
         <option value="$PROJECT_DIR$/src/pages/scan/scan.scss" />
         <option value="$PROJECT_DIR$/src/pages/scan/scan.ts" />
-        <option value="$PROJECT_DIR$/src/pages/scan/scan.html" />
-        <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.html" />
         <option value="$PROJECT_DIR$/src/pages/login/login.html" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/signup/signup.html" />
@@ -195,6 +205,12 @@
         <option value="$PROJECT_DIR$/src/providers/leadme-service.ts" />
         <option value="$PROJECT_DIR$/www/assets/js/scan.js" />
         <option value="$PROJECT_DIR$/src/providers/line-service.ts" />
+        <option value="$PROJECT_DIR$/www/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/contact/contact.html" />
+        <option value="$PROJECT_DIR$/src/pages/scan/scan.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/src/pages/phone/phone.html" />
+        <option value="$PROJECT_DIR$/src/pages/no-phone/no-phone.html" />
       </list>
     </option>
   </component>
@@ -241,7 +257,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,6 +304,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="providers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -311,6 +345,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scan" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phone" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,13 +432,57 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScannerQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="contact" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -369,7 +491,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="scan&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;leadmeService&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;leadme&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;contact.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;contact&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;line-servi&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;signup&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.ts&#10;auth-data&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;auth.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;scan.js&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;login.h&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;app.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;aut&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;line&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;line-service&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;auth&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;no-phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.ts&#10;no-phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;no-phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;config.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;scan.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;scan.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.ts&#10;signup.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.html&#10;home.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.scss&#10;scan.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.scss&#10;contact.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.scss&#10;home.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;home.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;contact.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.scss&#10;phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.ts&#10;phone.scss&#9;null&#9;null&#10;phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;home&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;app.m&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;login.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;app.module&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;tabs.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tab&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;login.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;line-ser&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;home.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;tabs.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabs.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tabs&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabspage&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value=".css&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/css/style.css&#10;scan&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;leadmeService&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;leadme&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/leadme-service.ts&#10;contact.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;contact&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;line-servi&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;signup&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.ts&#10;auth-data&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;auth.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;scan.js&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/www/assets/js/scan.js&#10;login.h&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;app.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;aut&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;line&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;line-service&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;auth&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/auth-data.ts&#10;no-phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.ts&#10;no-phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;no-phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/no-phone/no-phone.html&#10;config.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/config.xml&#10;scan.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.html&#10;scan.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.ts&#10;signup.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/signup/signup.html&#10;home.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.scss&#10;scan.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/scan/scan.scss&#10;contact.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.scss&#10;home.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;home.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;contact.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.html&#10;login.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;login.scss&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.scss&#10;phone.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.ts&#10;phone.scss&#9;null&#9;null&#10;phone&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;phone.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/phone/phone.html&#10;home&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.html&#10;contact.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/contact/contact.ts&#10;app.m&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;login.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.html&#10;app.module&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/app/app.module.ts&#10;tabs.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tab&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;login.ts&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/login/login.ts&#10;line-ser&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/providers/line-service.ts&#10;home.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/home/home.ts&#10;tabs.html&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html&#10;tabs.&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.ts&#10;tabs&#9;FILE&#9;file:///Users/marcusedwards/Documents/CCE/entrepreneurship/ikue/ScannerQ/src/pages/tabs/tabs.html" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -511,17 +633,20 @@
       <workItem from="1506181726829" duration="5220000" />
       <workItem from="1506213402552" duration="3634000" />
       <workItem from="1506276975012" duration="2119000" />
+      <workItem from="1506722526990" duration="1609000" />
+      <workItem from="1507139275069" duration="1065000" />
+      <workItem from="1508088647787" duration="2122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132311000" />
+    <option name="totallyTimeSpent" value="137107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1362" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28560606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29848486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -591,13 +716,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -740,13 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="10" selection-start-line="7" selection-start-column="2" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -782,24 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -831,44 +928,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/phone/phone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/providers/auth-data.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="300">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/no-phone/no-phone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,17 +946,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="600">
           <caret line="40" column="78" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,33 +961,89 @@
         <state relative-caret-position="345">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/scan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/providers/line-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="750">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/signup/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/leadme-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/scan/scan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/phone/phone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/no-phone/no-phone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
