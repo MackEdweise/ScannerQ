@@ -17,7 +17,6 @@
      <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
 
     <ion-item>
-      <ion-label >Email</ion-label>
       <ion-input #email formControlName="email" type="email" placeholder="Your email address" 
         [class.invalid]="!signupForm.controls.email.valid && signupForm.controls.email.dirty">
         </ion-input>
@@ -28,7 +27,6 @@
     </ion-item>
 
     <ion-item>
-        <ion-label >Password</ion-label>
         <ion-input #password formControlName="password" type="password" placeholder="Your password"
                    [class.invalid]="!signupForm.controls.password.valid && signupForm.controls.password.dirty">
         </ion-input>
@@ -39,7 +37,6 @@
     </ion-item>
 
     <ion-item>
-      <ion-label >Your Name</ion-label>
       <ion-input #name formControlName="name" type="text" placeholder="Your name"
       [class.invalid]="!signupForm.controls.name.valid && signupForm.controls.name.dirty">
       </ion-input>
@@ -49,7 +46,6 @@
       <p>Please enter a valid name.</p>
     </ion-item>
     <ion-item>
-      <ion-label >Line Name</ion-label>
       <ion-input #line formControlName="line" type="text" placeholder="Your line name"
         [class.invalid]="!signupForm.controls.line.valid && signupForm.controls.line.dirty">
       </ion-input>
@@ -59,7 +55,6 @@
        <p>Please enter a valid name.</p>
     </ion-item>
     <ion-item>
-        <ion-label >Company Name</ion-label>
           <ion-input #line formControlName="company" type="text" placeholder="Your company name"
             [class.invalid]="!signupForm.controls.company.valid && signupForm.controls.company.dirty">
         </ion-input>
