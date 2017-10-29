@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
-import { ScanPage } from'../scan/scan';
 import { ContactPage } from'../contact/contact';
 import { LineService } from '../../providers/line-service';
 
@@ -47,10 +46,6 @@ export class PhonePage {
 
     getServing(){
         this.lineService.serving.subscribe(serving => this.serving = serving);
-    }
-
-    goToScan(): void {
-        this.nav.push(ScanPage);
     }
 
     goToContact(): void {

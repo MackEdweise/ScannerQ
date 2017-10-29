@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 
-import { ScanPage } from '../pages/scan/scan';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { PhonePage } from '../pages/phone/phone';
@@ -37,7 +36,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    ScanPage,
     ContactPage,
     HomePage,
     Login,
@@ -55,7 +53,6 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ScanPage,
     ContactPage,
     HomePage,
     Login,

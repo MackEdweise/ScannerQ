@@ -1,75 +1,63 @@
 /**
- * Created by marcusedwards on 2017-07-01.
+ * Created by marcusedwards on 2017-10-28.
  */
 
-$(window).on('load', function(){
-    var scan_content = 0;
+function registerScan(text){
 
-    function displayContents(err, text) {
-        if (err) {
-            alert('Scan attempt not successful. Please try again.');
-            scan_content = 0 ;
-        } else {
+    var uid = firebase.auth().currentUser.uid;
 
-            var uid = firebase.auth().currentUser.uid;
+    firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
 
-            firebase.database().ref('users/'+uid).once('value').then(function (snapshot) {
+        var lineName = snapshot.val().line;
+        var dataKey = firebase.database().ref().child(lineName).push().key;
+        var updates = {};
+        updates[lineName + '/' + dataKey]= {key:text, rem:dataKey};
+        firebase.database().ref().update(updates);
 
-                var lineName = snapshot.val().line;
-                var dataKey = firebase.database().ref().child(lineName).push().key;
-                var updates = {};
-                updates[lineName + '/' + dataKey]= {key:text, rem:dataKey};
-                firebase.database().ref().update(updates);
+        var oldNum = $('#size-tag').text();
+        var newNum = (parseInt(oldNum) + 1);
+        newNum = newNum.toString();
+        $('#size-tag').text(newNum);
 
-                var oldNum = $('#size-tag').text();
-                var newNum = (parseInt(oldNum) + 1);
-                newNum = newNum.toString();
-                $('#size-tag').text(newNum);
+        firebase.database().ref('leadmeUsers/' + uid).once('value').then(function (snapshot) {
+            var leadmeId = snapshot.val();
+            var leadId = text;
+            console.log('scanned data for connection:');
+            console.log(leadId);
+            console.log(leadmeId);
+            console.log(lineName);
 
-                firebase.database().ref('leadmeUsers/' + uid).once('value').then(function (snapshot) {
-                    leadmeId = snapshot.val();
-                    leadId = text;
-
-                    $.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
-                        {
-                            lead:leadId,
-                            user:leadmeId,
-                            location:lineName
-                        });
+            $.post('http://gentle-forest-16873.herokuapp.com/leadmeData',
+                {
+                    lead:leadId,
+                    user:leadmeId,
+                    location:lineName
+                })
+                .done(function(){
+                    alert('Code successfully scanned!');
                 });
-            });
-
-            alert('Code successfully scanned: ' + text);
-
-            scan_content = text;
-            scan();
-        }
-    }
-
-    function scan() {
-
-        console.log('beginning to scan');
-
-        QRScanner = window.QRScanner;
-
-        QRScanner.useFrontCamera(function(err, status){
-            err && console.error(err);
-            console.log(status);
         });
+    });
+}
 
-        QRScanner.scan(displayContents);
-        QRScanner.show();
-    }
+function scan() {
+    cordova.plugins.barcodeScanner.scan(
+        function (result) {
+            if(!result.cancelled)
+            {
+                if(result.format == "QR_CODE")
+                {
 
-    scan();
-    setInterval(function(){
-        if($('#scan-header').length > 0){
-            $('body').css('height','50%');
-            $('body').css('background-color', 'transparent');
+                    var value = result.text;
+                    registerScan(value);
+                }
+            }
+        },
+        function (error) {
+            alert("Scanning failed: " + error);
+        },
+        {
+            "preferFrontCamera" : true
         }
-        else{
-            $('body').css('height','100%');
-            $('body').css('background-color', 'white');
-        }
-    },1000);
-});
+    );
+}

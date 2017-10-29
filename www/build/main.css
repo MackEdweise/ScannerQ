@@ -25290,23 +25290,3 @@ page-phone .logo {
 page-phone .padding-large-top {
   margin-top: 50px;
 }
-
-page-scan .list.card {
-  border-top: 3px solid grey;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
-
-page-scan .inner {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-page-scan .logo {
-  width: 100px;
-}
-
-page-scan .padding-large-top {
-  margin-top: 50px;
-}
